@@ -34,6 +34,14 @@
       `;
       list.appendChild(li);
     });
+    
+    function removeAllPayments() {
+      data.payments = [];
+      updateList('payments');
+    }
+
+    document.getElementById('remove-all-payments-btn').addEventListener('click', removeAllPayments);
+
 
     const total = data[type].reduce((acc, val) => acc + val, 0);
     totalDiv.textContent = `Сума: ${total}`;

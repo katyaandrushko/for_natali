@@ -98,6 +98,21 @@
       margin-top: 14px;
     }
 
+    .remove-all-btn {
+      width: 100%;
+      background: #b11919;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      padding: 8px;
+      font-size: 14px;
+    }
+    .remove-all-btn:hover {
+      background: #8a1616;
+    }
+
   </style>
 </head>
 <body>
@@ -125,9 +140,10 @@
     <h2>Сума оплат</h2>
     <input type="number" id="payments-input" placeholder="Додати число">
     <button onclick="addValue('payments')">Додати</button>
+    <button id="remove-all-payments-btn" class="remove-all-btn">Видалити все</button>
     <ul id="payments-list"></ul>
     <div class="total" id="payments-total">Сума: 0</div>
-  </div>
+</div>
 </div>
 
 <script src="./index.js">
